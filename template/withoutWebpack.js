@@ -12,3 +12,4 @@ export default {
     </div>
   `,
 };
+//Routerから直接読み込み可能。
