@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#go").click(function(){(',');
+   var inputdata=$("#inputdata").val().split
+   var result="";
+   $.each(inputdata,function(key,value){
+      result +='"'.concat(value.replace('"',"").padEnd($("#padLen").val(),'.').concat('"\n'));
+   });
+   $("#outputdata").val(result);
+  });
+});
+</script>
+</head>
+<body>
+lenght <input type='text' id='padLen'/>
+<br>
+<textarea id='inputdata' ></textarea>
+<br>
+<button id='go'>go</button>
+<br>
+<textarea id='outputdata' ></textarea>
+
+
+</body>
+</html>
